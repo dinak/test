@@ -15,3 +15,7 @@ sed -i "s-\[ACCOUNTID\]-$accountId-g" /opt/itconductor/conf/AGENT.xml
 sed -i "s-\[APIKEY\]-$apiKey-g" /opt/itconductor/conf/AGENT.xml
 
 sed -i "s-\[GATEWAYID\]-$gatewayId-g" /opt/itconductor/conf/AGENT.xml
+
+sudo systemctl stop itconductor-gateway
+
+sudo systemctl start itconductor-gateway
