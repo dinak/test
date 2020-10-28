@@ -10,3 +10,8 @@ sudo apt-get update
 
 sudo rpm -U --nodeps  /home/$linuxUser/itconductor-gateway-6-65.x86_64.rpm
 
+sed -i "s-\[ACCOUNTID\]-$accountId-g" Agent.xml
+
+sed -i "s-\[APIKEY\]-$apiKey-g" Agent.xml
+
+sed -i "s-\[GATEWAYID\]-$gatewayId-g" Agent.xml
