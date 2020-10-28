@@ -5,7 +5,5 @@ curl -u $user:$password https://service.itconductor.com/lib/itconductor-gateway-
 
 sudo apt-get update
 
-sudo apt-get install rpm -qq
-
 sudo rpm -U --nodeps  /home/itcadmin/itconductor-gateway-6-65.x86_64.rpm
 
